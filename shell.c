@@ -110,8 +110,8 @@ runcmd(struct cmd *cmd)
     }
     close(pipefd[0]);
     close(pipefd[1]);
-    wait();
-    wait();
+    wait(&r);
+    wait(&r);
     break;
   }    
   exit(0);
